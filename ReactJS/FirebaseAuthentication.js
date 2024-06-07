@@ -7,7 +7,7 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
 } from "firebase/auth";
-import { auth } from "./firebase-config";
+import { auth } from "./config";
 
 /**
  * FirebaseAuthentication class for performing authentication operations.

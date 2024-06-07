@@ -1,5 +1,5 @@
 import { ref, set, get, update, remove } from "@firebase/database";
-import { realtimeDb } from "./firebase-config";
+import { realtimeDb } from "./config";
 
 /**
  * FirebaseRealtimeDatabase class for performing CRUD operations on Realtime Database.
