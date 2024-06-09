@@ -13,6 +13,10 @@ Firebase Integration Abstraction offers a simplified approach to integrating Fir
     - [Version 1](#version-1)
     - [Version 2](#version-2)
   - [React.js Integration](#reactjs-integration)
+    - [Firebase Authentication](#firebase-authentication)
+    - [Firebase Realtime Database](#firebase-realtime-database)
+    - [Firebase Firestore](#firebase-firestore)
+    - [Firebase Storage](#firebase-storage)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contributing](#contributing)
@@ -44,7 +48,7 @@ Version 2 builds upon the foundation laid by Version 1, offering enhancements an
 
 ## React.js Integration
 
-The React.js integration, currently ongoing, aims to provide similar abstraction layers for Firebase services within React.js applications. Stay tuned for updates on the progress and availability of this integration.
+The React.js integration aims to provide similar abstraction layers for Firebase services within React.js applications. 
 
 ---
 
@@ -52,11 +56,15 @@ The React.js integration, currently ongoing, aims to provide similar abstraction
 
 To integrate Firebase Integration Abstraction into your project, follow the installation instructions provided in each version's README.md file.
 
+```bash
+npm install firebase @firebase/database @firebase/storage @firebase/firestore
+```
+
 ---
 
 ## Usage
 
-Detailed usage instructions, examples, and best practices for integrating Firebase services into your Express.js and React.js applications are provided in the respective README.md files for each version. Follow these instructions to seamlessly incorporate Firebase services into your projects.
+Detailed usage instructions, examples, and best practices for integrating Firebase services into your Express.js and React.js applications are provided in the respective README.md files for each version. Follow these instructions to incorporate Firebase services into your projects seamlessly.
 
 ---
 
