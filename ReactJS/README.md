@@ -7,9 +7,11 @@ This repository contains an abstraction layer for integrating Firebase services 
 To use this abstraction layer in your ReactJS project, follow these steps:
 
 1. Install the necessary dependencies:
+
    ```bash
    npm install firebase @firebase/database @firebase/storage @firebase/firestore
    ```
+
 2. Clone this repository:
 
    ```bash
@@ -62,11 +64,43 @@ if (success) {
 
 ### Storage
 
-<!-- Implementation details for Firebase Storage will go here -->
+The `FirebaseStorage` class provides methods for file storage operations:
+
+```javascript
+// Example usage
+import FirebaseStorage from "./FirebaseStorage.js";
+
+const storage = new FirebaseStorage("initial/path");
+
+const file = new File(["content"], "example.txt", { type: "text/plain" });
+
+const [success, fileUrl] = await storage.uploadFile("path/to/file", file);
+if (success) {
+  console.log("File uploaded successfully. File URL:", fileUrl);
+} else {
+  console.error("Error uploading file:", fileUrl);
+}
+```
 
 ### Firestore
 
-<!-- Implementation details for Firestore will go here -->
+The `FirebaseFirestore` class allows CRUD operations on Firebase Firestore:
+
+```javascript
+// Example usage
+import FirebaseFirestore from "./FirebaseFirestore.js";
+
+const firestore = new FirebaseFirestore("collectionName", uid);
+
+const data = { field1: "value1", field2: "value2" };
+
+const [success, docId] = await firestore.create(data);
+if (success) {
+  console.log("Document created successfully. DocumentID:", docId);
+} else {
+  console.error("Error creating document:", docId);
+}
+```
 
 <hr>
 
